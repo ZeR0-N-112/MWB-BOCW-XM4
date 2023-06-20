@@ -6,11 +6,11 @@
     "$bumpmap" "zeron\weapons\xm4\weapon_vm_ar_t9standard_stock_n"
     "$phongexponenttexture" "zeron\weapons\xm4\weapon_vm_ar_t9standard_stock_e"
 
-    "$color2" "[0 0 0]"
+    //"$color2" "[0 0 0]"
     "$blendtintbybasealpha" "1"
 
     "$phong" "1"
-    "$phongboost" "1"
+    "$phongboost" "0.7"
     "$phongfresnelranges" "[1 0.5 0]"
     "$phongalbedotint" "0"
 

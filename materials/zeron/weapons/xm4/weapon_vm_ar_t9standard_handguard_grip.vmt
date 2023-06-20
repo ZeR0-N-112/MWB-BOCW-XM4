@@ -6,11 +6,11 @@
     "$bumpmap" "zeron\weapons\xm4\weapon_vm_ar_t9standard_handguard_grip_n"
     "$phongexponenttexture" "zeron\weapons\xm4\weapon_vm_ar_t9standard_handguard_grip_e"
 
-    "$color2" "[0 0 0]"
+    //"$color2" "[0 0 0]"
     "$blendtintbybasealpha" "1"
 
     "$phong" "1"
-    "$phongboost" "1"
+    "$phongboost" "0.7"
     "$phongfresnelranges" "[1 0.5 0]"
     "$phongalbedotint" "0"
 
@@ -18,7 +18,7 @@
     "$rimlight" "1"
     "$rimlightexponent" "100"
     "$rimmask" "1"
-    "$rimlightboost" "1"
+    "$rimlightboost" "0.2"
 
     "$normalmapalphaenvmapmask" "1"
     "$envmapfresnel" "1"
@@ -30,9 +30,9 @@
     {
         "MwEnvMapTint"
         {
-            "specularity" "0.5"             //0.25, 0.5, 0.75, 1
+            "specularity" "0.25"             //0.25, 0.5, 0.75, 1
             "min" "0"
-            "max" "0.2"                       //change this if too bright in game
+            "max" "0.12"                       //change this if too bright in game
         }
     }
 }
