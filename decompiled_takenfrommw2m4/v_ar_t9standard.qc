@@ -565,7 +565,7 @@ $animation "a_delta_ads_additive_for_offset_corrective_animation" "v_mike4_anims
 $animation "a_jog_offset_idle_corrective_animation" "v_mike4_anims\a_jog_offset_idle_corrective_animation.smd" {
 }
 
-$animation "a_jog_offset_corrective_animation" "v_mike4_anims\a_jog_offset_corrective_animation.smd" {
+$animation "a_jog_offset_corrective_animation" "anims\@a_walk_to_sprint_corrective_animation.smd" {
 }
 
 $animation "a_firemode_idle_corrective_animation" "v_mike4_anims\a_firemode_idle_corrective_animation.smd" {
@@ -577,7 +577,7 @@ $animation "a_semi_override_additive_corrective_animation" "v_mike4_anims\a_semi
 $animation "a_jog_idle_corrective_animation" "v_mike4_anims\a_jog_idle_corrective_animation.smd" {
 }
 
-$animation "a_jog_corrective_animation" "v_mike4_anims\a_jog_corrective_animation.smd" {
+$animation "a_jog_corrective_animation" "anims\@a_walk_to_sprint_corrective_animation.smd" {
 }
 
 $animation "a_walk_idle_corrective_animation" "v_mike4_anims\a_walk_idle_corrective_animation.smd" {
@@ -586,13 +586,13 @@ $animation "a_walk_idle_corrective_animation" "v_mike4_anims\a_walk_idle_correct
 $animation "a_walk_corrective_animation" "v_mike4_anims\a_walk_corrective_animation.smd" {
 }
 
-$animation "@a_walk_to_sprint_corrective_animation" "v_mike4_anims\@a_walk_to_sprint_corrective_animation.smd" {
+$animation "@a_walk_to_sprint_corrective_animation" "anims\@a_walk_to_sprint_corrective_animation.smd" {
 }
 
 $animation "a_sprint_idle_corrective_animation" "v_mike4_anims\a_sprint_idle_corrective_animation.smd" {
 }
 
-$animation "a_sprint_corrective_animation" "v_mike4_anims\a_sprint_corrective_animation.smd" {
+$animation "a_sprint_corrective_animation" "anims\a_sprint_corrective_animation.smd" {
 }
 
 $animation "@a_sprint_to_walk_corrective_animation" "v_mike4_anims\@a_sprint_to_walk_corrective_animation.smd" {
@@ -739,7 +739,7 @@ $animation "a_jog_offset_idle" "v_mike4_anims\a_jog_offset_idle.smd" {
 	subtract "a_jog_offset_idle_corrective_animation" 0
 }
 
-$animation "a_jog_offset" "v_mike4_anims\a_jog_offset.smd" {
+$animation "a_jog_offset" "anims\a_jog_offset.smd" {
 	fps 30
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_jog_offset_corrective_animation" 0
@@ -781,7 +781,7 @@ $animation "a_jog_idle" "v_mike4_anims\a_jog_idle.smd" {
 	subtract "a_jog_idle_corrective_animation" 0
 }
 
-$animation "a_jog" "v_mike4_anims\a_jog.smd" {
+$animation "a_jog" "anims\a_jog.smd" {
 	fps 30
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_jog_corrective_animation" 0
@@ -835,7 +835,7 @@ $animation "a_sprint_idle" "v_mike4_anims\a_sprint_idle.smd" {
 	subtract "a_sprint_idle_corrective_animation" 0
 }
 
-$animation "a_sprint" "v_mike4_anims\a_sprint.smd" {
+$animation "a_sprint" "anims\a_sprint.smd" {
 	fps 30
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_sprint_corrective_animation" 0
@@ -2362,7 +2362,7 @@ $sequence "walk_loop" {
 }
 
 $sequence "a_walk_to_sprint" {
-	"v_mike4_anims\a_walk_to_sprint.smd"
+	"anims\a_walk_to_sprint.smd"
 	delta
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "@a_walk_to_sprint_corrective_animation" 0
@@ -2414,7 +2414,7 @@ $sequence "sprint_loop" {
 }
 
 $sequence "a_sprint_to_walk" {
-	"v_mike4_anims\a_sprint_to_walk.smd"
+	"v_mpapa7_anims\a_sprint_to_walk.smd"
 	delta
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "@a_sprint_to_walk_corrective_animation" 0
@@ -2488,7 +2488,7 @@ $sequence "freefall_loop" {
 }
 
 $sequence "a_landdelta" {
-	"v_mike4_anims\a_landdelta.smd"
+	"v_mpapa7_anims\a_landdelta.smd"
 	delta
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "@a_landdelta_corrective_animation" 0
@@ -2530,7 +2530,7 @@ $sequence "jump_land" {
 }
 
 $sequence "a_jumpdelta" {
-	"v_mike4_anims\a_jumpdelta.smd"
+	"v_mpapa7_anims\a_jumpdelta.smd"
 	delta
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "@a_jumpdelta_corrective_animation" 0
@@ -2714,7 +2714,7 @@ $sequence "hybrid_offset" {
 }
 
 $sequence "a_jog_to_walk" {
-	"v_mike4_anims\a_jog_to_walk.smd"
+	"v_mpapa7_anims\a_jog_to_walk.smd"
 	delta
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "@a_jog_to_walk_corrective_animation" 0
