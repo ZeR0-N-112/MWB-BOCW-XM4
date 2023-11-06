@@ -1377,12 +1377,6 @@ $sequence "reload_empty" {
 	addlayer "grip_barshort_gripvert_offset"
 	addlayer "grip_gripang_offset"
 	addlayer "grip_gripvert_offset"
- 
- 
- 
- 
- 
- 
 	addlayer "grip_gripvertpro_offset"
 	addlayer "hybrid_offset"
 	fps 30
@@ -1390,56 +1384,10 @@ $sequence "reload_empty" {
 	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 1 
 }
 
-$sequence "reload_empty_xmaglrg_fast" {
-	"anims\reload_empty_fast_xmaglrg.smd"
-	"anims\reload_empty_fast_xmaglrg_ads.smd"
-	blend "aim_offset" 0 1
-	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 0 "p01_ar_mike4_reload_empty_fast_lift" }
-	{ event 5004 7 "Viewmodel.Small" }
-	{ event 5004 8 "p01_ar_mike4_reload_xmaglrg_magout" }
-	{ event 5004 13 "MW_MagazineDrop.AR.Poly -10,10,40" }
-	{ event 9031 19 "ResetBullets" }
-	{ event 5004 24 "Viewmodel.Small" }
-	{ event 5004 34 "p01_ar_mike4_reload_xmaglrg_maghit" }
-	{ event 5004 40 "p01_ar_mike4_reload_xmaglrg_magin" }
-	{ event 5004 27 "Viewmodel.Medium" }
-	{ event 5004 52 "p01_ar_mike4_reload_empty_xmaglrg_charge" }
-	{ event 5004 36 "Viewmodel.Small" }
-	{ event 9011 62 "1" }
-	{ event 5004 62 "p01_ar_mike4_reload_xmaglrg_end" }
-	{ event 5004 48 "Viewmodel.Small" }
-	fadein 0.2
-	fadeout 0.2
-	addlayer "jog_loop"
-	addlayer "jog_offset"
-	addlayer "walk_loop"
-	addlayer "sprint_loop"
-	addlayer "sprint_offset"
-	addlayer "freefall_loop"
-	addlayer "aim_offset"
-	addlayer "firemode_offset"
- 
-	addlayer "grip_barshort_gripang_offset"
-	addlayer "grip_barshort_gripvert_offset"
-	addlayer "grip_gripang_offset"
-	addlayer "grip_gripvert_offset"
- 
- 
- 
- 
- 
-	addlayer "grip_gripvertpro_offset"
-	addlayer "hybrid_offset"
-	fps 30
-	ikrule "rhand" touch "tag_ik_loc_ri" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 0  
-	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 1 
-}
 
-$sequence "reload_empty_xmaglrg" {
-	"anims\reload_empty_xmaglrg.smd"
-	"anims\reload_empty_xmaglrg_ads.smd"
+$sequence "reload_mixclip" {
+	"anims\vm_ar_t9standard_reload_mixclip.smd"
+	"anims\vm_ar_t9standard_reload_mixclip.smd"
 	blend "aim_offset" 0 1
 	blendwidth 2
 	{ event 9011 13 "0" }
@@ -1467,16 +1415,10 @@ $sequence "reload_empty_xmaglrg" {
 	addlayer "freefall_loop"
 	addlayer "aim_offset"
 	addlayer "firemode_offset"
- 
 	addlayer "grip_barshort_gripang_offset"
 	addlayer "grip_barshort_gripvert_offset"
 	addlayer "grip_gripang_offset"
 	addlayer "grip_gripvert_offset"
- 
- 
- 
- 
- 
 	addlayer "grip_gripvertpro_offset"
 	addlayer "hybrid_offset"
 	fps 30
@@ -1484,7 +1426,7 @@ $sequence "reload_empty_xmaglrg" {
 	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 1  
 }
 
-$sequence "reload_empty_fast" {
+$sequence "reload_empty_fastmag" {
 	"anims\vm_ar_t9standard_reload_empty_fastmag.smd"
 	"anims\vm_ar_t9standard_reload_empty_fastmag_ads.smd"
 	blend "aim_offset" 0 1
@@ -1530,7 +1472,7 @@ $sequence "reload_empty_fast" {
 	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 1
 }
 
-$sequence "reload_empty_fast2" {
+$sequence "reload_empty_fastmag2" {
 	"anims\vm_ar_t9standard_reload_empty_fastmag_flip.smd"
 	"anims\vm_ar_t9standard_reload_empty_fastmag_flip_ads.smd"
 	blend "aim_offset" 0 1
@@ -1576,9 +1518,9 @@ $sequence "reload_empty_fast2" {
 	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 1  
 }
 
-$sequence "reload_empty_xmag" {
-	"anims\reload_empty_xmag.smd"
-	"anims\reload_empty_xmag_ads.smd"
+$sequence "reload_empty_extmag" {
+	"anims\vm_ar_t9standard_reload_empty_extmag.smd"
+	"anims\vm_ar_t9standard_reload_empty_extmag_ads.smd"
 	blend "aim_offset" 0 1
 	blendwidth 2
 	{ event 9011 0 "0" }
@@ -1623,52 +1565,6 @@ $sequence "reload_empty_xmag" {
 	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 1
 }
 
-$sequence "reload_empty_xmag_fast" {
-	"anims\reload_empty_fast_xmag.smd"
-	"anims\reload_empty_fast_xmag_ads.smd"
-	blend "aim_offset" 0 1
-	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 0 "p01_ar_mike4_reload_empty_fast_lift" }
-	{ event 5004 7 "Viewmodel.Small" }
-	{ event 5004 10 "p01_ar_mike4_reload_xmag_magout" }
-	{ event 5004 13 "MW_MagazineDrop.AR.Poly -10,10,40" }
-	{ event 9031 19 "ResetBullets" }
-	{ event 5004 24 "Viewmodel.Small" }
-	{ event 5004 31 "p01_ar_mike4_reload_xmag_maghit" }
-	{ event 5004 33 "p01_ar_mike4_reload_xmag_magin" }
-	{ event 5004 27 "Viewmodel.Medium" }
-	{ event 5004 45 "p01_ar_mike4_reload_empty_xmag_charge" }
-	{ event 5004 36 "Viewmodel.Small" }
-	{ event 9011 52 "1" }
-	{ event 5004 53 "p01_ar_mike4_reload_empty_fast_end" }
-	{ event 5004 48 "Viewmodel.Small" }
-	fadein 0.2
-	fadeout 0.2
-	addlayer "jog_loop"
-	addlayer "jog_offset"
-	addlayer "walk_loop"
-	addlayer "sprint_loop"
-	addlayer "sprint_offset"
-	addlayer "freefall_loop"
-	addlayer "aim_offset"
-	addlayer "firemode_offset"
-	addlayer "grip_barshort_gripang_offset"
-	addlayer "grip_barshort_gripvert_offset"
-	addlayer "grip_gripang_offset"
-	addlayer "grip_gripvert_offset"
- 
- 
- 
- 
- 
- 
-	addlayer "grip_gripvertpro_offset"
-	addlayer "hybrid_offset"
-	fps 30
-	ikrule "rhand" touch "tag_ik_loc_ri" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 0  
-	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 1 
-}
 
 $sequence "reload" {
 	"anims\vm_ar_t9standard_reload.smd"
@@ -1701,12 +1597,6 @@ $sequence "reload" {
 	addlayer "grip_barshort_gripvert_offset"
 	addlayer "grip_gripang_offset"
 	addlayer "grip_gripvert_offset"
- 
- 
- 
- 
- 
- 
 	addlayer "grip_gripvertpro_offset"
 	addlayer "hybrid_offset"
 	fps 30
@@ -1714,7 +1604,7 @@ $sequence "reload" {
 	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 1  
 }
 
-$sequence "reload_fast" {
+$sequence "reload_fastmag" {
 	"anims\vm_ar_t9standard_reload_fastmag.smd"
 	"anims\vm_ar_t9standard_reload_fastmag_ads.smd"
 	blend "aim_offset" 0 1
@@ -1743,12 +1633,6 @@ $sequence "reload_fast" {
 	addlayer "grip_barshort_gripvert_offset"
 	addlayer "grip_gripang_offset"
 	addlayer "grip_gripvert_offset"
- 
- 
- 
- 
- 
- 
 	addlayer "grip_gripvertpro_offset"
 	addlayer "hybrid_offset"
 	fps 30
@@ -1756,7 +1640,7 @@ $sequence "reload_fast" {
 	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 1
 }
 
-$sequence "reload_fast2" {
+$sequence "reload_fastmag2" {
 	"anims\vm_ar_t9standard_reload_fastmag_flip.smd"
 	"anims\vm_ar_t9standard_reload_fastmag_ads.smd"
 	blend "aim_offset" 0 1
@@ -1785,12 +1669,7 @@ $sequence "reload_fast2" {
 	addlayer "grip_barshort_gripvert_offset"
 	addlayer "grip_gripang_offset"
 	addlayer "grip_gripvert_offset"
- 
- 
- 
- 
- 
- 
+
 	addlayer "grip_gripvertpro_offset"
 	addlayer "hybrid_offset"
 	fps 30
@@ -1798,7 +1677,7 @@ $sequence "reload_fast2" {
 	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 1  
 }
 
-$sequence "reload_xmag" {
+$sequence "reload_extmag" {
 	"anims\vm_ar_t9standard_reload_extmag.smd"
 	"anims\vm_ar_t9standard_reload_extmag_ads.smd"
 	blend "aim_offset" 0 1
@@ -2133,12 +2012,6 @@ $sequence "melee_hit_03" {
 	addlayer "grip_barshort_gripvert_offset"
 	addlayer "grip_gripang_offset"
 	addlayer "grip_gripvert_offset"
- 
- 
- 
- 
- 
- 
 	addlayer "grip_gripvertpro_offset"
 	addlayer "hybrid_offset"
 	fps 30
@@ -2345,7 +2218,7 @@ $sequence "a_walk_to_sprint" {
 }
 
 $sequence "sprint_in" {
-	"v_mike4_anims\sprint_in.smd"
+	"anims\vm_ar_t9standard_idle.smd"
 	fadein 0.2
 	fadeout 0.2
 	addlayer "a_walk_to_sprint"
@@ -2369,8 +2242,8 @@ $sequence "sprint_in" {
 	addlayer "grip_gripvertpro_offset"
 	addlayer "hybrid_offset"
 	fps 1.25
-	ikrule "rhand" touch "tag_sling" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 0 usesequence 
-	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 1 usesequence 
+	ikrule "rhand" touch "tag_ik_loc_ri" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 0  
+	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 1  
 }
 
 $sequence "sprint_loop" {
@@ -2395,7 +2268,7 @@ $sequence "a_sprint_to_walk" {
 }
 
 $sequence "sprint_out" {
-	"v_mike4_anims\sprint_out.smd"
+	"anims\vm_ar_t9standard_idle.smd"
 	fadein 0.2
 	fadeout 0.2
 	addlayer "a_sprint_to_walk"
@@ -2419,8 +2292,8 @@ $sequence "sprint_out" {
 	addlayer "grip_gripvertpro_offset"
 	addlayer "hybrid_offset"
 	fps 1.25
-	ikrule "rhand" touch "tag_sling" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 0 usesequence 
-	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 1 usesequence 
+	ikrule "rhand" touch "tag_ik_loc_ri" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 0  
+	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 1  
 }
 
 $sequence "sprint_offset" {
@@ -2467,7 +2340,7 @@ $sequence "a_landdelta" {
 }
 
 $sequence "jump_land" {
-	"v_mike4_anims\jump_land.smd"
+	"anims\vm_ar_t9standard_idle.smd"
 	fadein 0.2
 	fadeout 0.2
 	addlayer "a_landdelta"
@@ -2492,8 +2365,8 @@ $sequence "jump_land" {
 	addlayer "grip_gripvertpro_offset"
 	addlayer "hybrid_offset"
 	fps 1.363
-	ikrule "rhand" touch "tag_sling" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 0 usesequence 
-	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 1 usesequence 
+	ikrule "rhand" touch "tag_ik_loc_ri" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 0  
+	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 1  
 }
 
 $sequence "a_jumpdelta" {
@@ -2507,7 +2380,7 @@ $sequence "a_jumpdelta" {
 }
 
 $sequence "jump" {
-	"v_mike4_anims\jump.smd"
+	"anims\vm_ar_t9standard_idle.smd"
 	fadein 0.2
 	fadeout 0.2
 	addlayer "a_jumpdelta"
@@ -2532,8 +2405,8 @@ $sequence "jump" {
 	addlayer "grip_gripvertpro_offset"
 	addlayer "hybrid_offset"
 	fps 2.727
-	ikrule "rhand" touch "tag_sling" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 0 usesequence 
-	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 1 usesequence 
+	ikrule "rhand" touch "tag_ik_loc_ri" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 0  
+	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 1  
 }
 
 $sequence "empty_offset" {
@@ -2679,7 +2552,7 @@ $sequence "a_jog_to_walk" {
 }
 
 $sequence "jog_out" {
-	"v_mike4_anims\jog_out.smd"
+	"anims\vm_ar_t9standard_idle.smd"
 	fadein 0.2
 	fadeout 0.2
 	addlayer "a_jog_to_walk"
@@ -2703,8 +2576,8 @@ $sequence "jog_out" {
 	addlayer "grip_gripvertpro_offset"
 	addlayer "hybrid_offset"
 	fps 1.304
-	ikrule "rhand" touch "tag_sling" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 0 usesequence 
-	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 1 usesequence 
+	ikrule "rhand" touch "tag_ik_loc_ri" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 0  
+	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 1  
 }
 $keyvalues
 {
