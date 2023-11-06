@@ -4,7 +4,7 @@ $modelname "v_ar_t9standard.mdl"
 
 $bodygroup "receiver"
 
-	studio "XM4WZ.smd"
+	studio "attachment_vm_ar_t9standard_receiver_LOD0.smd"
 	blank
 	blank
 	blank
@@ -13,26 +13,28 @@ $bodygroup "grip"
 {
 	blank
 }
+$bodygroup "tag_grip_hide"
+{
+	blank
+	studio "bottom_rail.smd"
+}
+
+$bodygroup "sling"
+{
+	studio "Sling.smd"
+	blank
+}
 $bodygroup "tag_sight"
 {
 	studio "XM4WZ_Son.smd"
 	studio "XM4WZ_Soff.smd"
-	studio "XM4WZ_Soff.smd"
+	studio "XM4WZ_Scut.smd"
 }
-$bodygroup "tag_tip"
-{
-	studio "XM4WZ_MUZ.smd"
-	blank
-}
-$bodygroup "stock_hide"
-{
-	blank 
-	blank
-}
+
 $bodygroup "tag_laser_hide"
 {
-	blank 
-	studio "XM4WZ_LSR.smd"
+	studio "tag_laser_hide_off.smd" 
+	studio "tag_laser_hide_on.smd"
 }
 
 
@@ -47,9 +49,12 @@ $mostlyopaque
 $cdmaterials "zeron/weapons/xm4/"
 
 $attachment "muzzle" "tag_flash" 0 0 0 rotate 0 0 0
-$attachment "shell_eject" "tag_brass" 0 0 0 rotate 0 0 0
+$attachment "shell_eject" "tag_brass" 0.00 0.00 0.00 rotate 0 -180 90
 $attachment "camera" "tag_playerhelmet" 0 0 0 rotate 0 0 0
 $attachment "reflex" "tag_reflex" 0 0 0 rotate 0 0 0
+$attachment "laser" "tag_laser_attach" 0 0 0 rotate 0 0 0
+$attachment "grip" "tag_grip_attach" 0 0 0 rotate 0 0 0
+$attachment "folding_grip" "tag_folding_grip" 0 0 0 rotate 0 0 0
 $attachment "holo" "tag_holo" 0 0 0 rotate 0 0 0
 $attachment "scope" "tag_scope" 0 0 0 rotate 0 0 0
 $attachment "acog" "tag_acog_2" 0 0 0 rotate 0 0 0
@@ -61,7 +66,7 @@ $cbox 0 0 0 0 0 0
 
 $bbox -12.607 -28.384 -65.939 28.774 19.342 64.32
 
- $definebone "tag_origin" "" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "tag_origin" "" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "tag_view" "tag_origin" -0.106 0 64.32 0 0 0 0 0 0 0 0 0
 $definebone "tag_ads" "tag_view" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "tag_torso" "tag_ads" -0.904 0 -11.806 0 0 0 0 0 0 0 0 0
@@ -202,6 +207,9 @@ $definebone "j_mike4_bolt" "tag_sling" 4.203 -0.003 -0.048 0 0 0 0 0 0 0 0 0
 $definebone "tag_mag_hide" "j_ejectioncover" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "tag_mag_show" "j_ejectioncover" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "tag_flash" "tag_barrel_attach" 13.105999 0 -0.006 0 0 0 0 0 0 0 0 0
+$definebone "tag_grip_attach" "tag_barrel_attach" 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 3.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "tag_folding_grip" "tag_barrel_attach" 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "tag_laser_attach" "tag_barrel_attach" 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
 $definebone "tag_ik_loc_le" "tag_barrel_attach" 1.868 1.809 -1.975 -0.983711 -26.68316 -127.114014 0 0 0 0 0 0
 $definebone "tag_grip_hide" "tag_barrel_attach" 6.072001 0 -1.238 0 0 0 0 0 0 0 0 0
 $definebone "j_hybrid_scope" "tag_hybrid" 1.086 -0.661 -0.149 0 0 0 0 0 0 0 0 0

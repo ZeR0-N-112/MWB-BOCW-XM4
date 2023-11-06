@@ -83,6 +83,12 @@ end
 
 SWEP.Customization = {
     {"att_perk", "attachment_vm_ar_mike4_perk_soh", "att_perk_fmj", "att_perk_ricochet", "att_perk_headshot"}, 
+	
+    {"attachment_vm_ar_t9standard_stock"}, 
+
+    {"attachment_vm_ar_t9standard_barrel"}, 
+
+    {"attachment_vm_ar_t9standard_mag"}, 
 
     {"att_muzzle", "att_vm_breacher01", "att_vm_breacher02", "att_vm_compensator01", 
     "att_vm_compensator02", "att_vm_flashhider01", "att_vm_flashhider02", 
