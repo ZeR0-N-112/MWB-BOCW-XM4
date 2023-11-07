@@ -92,11 +92,11 @@ SWEP.Cone = {
 }
 
 SWEP.Recoil = {
-    Vertical = {1, 1.5}, --random value between the 2
-    Horizontal = {-1.75, 1.75}, --random value between the 2
-    Shake = 1.7, --camera shake
-    AdsMultiplier = 0.2, --multiply the values by this amount while aiming
-    Seed = 6969420, --give this a random number until you like the current recoil pattern
+    Vertical = {-0.5, 1.2}, --random value between the 2
+    Horizontal = {-0.5, 0.5}, --random value between the 2
+    Shake = 1.2, --camera shake
+    AdsMultiplier = 0.1, --multiply the values by this amount while aiming
+    Seed = 7355608, --give this a random number until you like the current recoil pattern
     ViewModelMultiplier = 2
 }
 SWEP.Bullet = {
