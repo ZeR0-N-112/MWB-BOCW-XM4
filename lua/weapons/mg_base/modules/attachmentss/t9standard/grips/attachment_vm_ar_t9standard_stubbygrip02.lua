@@ -10,5 +10,7 @@ function ATTACHMENT:PostProcess(weapon)
     
     if (weapon.AlternateGrips) then 
         weapon:SetGripPoseParameter("grip_barshort_gripvert_offset") 
+    else
+        weapon:SetGripPoseParameter("grip_barshort_gripvert_offset")
     end
 end

@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$basetexture" "VGUI/entities/mixstock_2"
+	"$basetexture" "kyo/attachments/t9standard/icon/mixstock_2"
 	"$nolod" 1
 	"$vertexalpha" 1
 	"$vertexcolor" 1

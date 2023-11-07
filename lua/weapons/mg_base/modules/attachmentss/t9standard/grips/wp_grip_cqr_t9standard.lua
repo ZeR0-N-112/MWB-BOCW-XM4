@@ -16,6 +16,6 @@ function ATTACHMENT:Stats(weapon)
     weapon.Recoil.Horizontal[1] = weapon.Recoil.Horizontal[1] * 0.55
     weapon.Recoil.Vertical[2] = weapon.Recoil.Vertical[2] * 0.55
 	    if (weapon.AlternateGrips) then 
-        weapon:SetGripPoseParameter("grip_barshort_gripvert_offset") 
+        weapon:SetGripPoseParameter("grip_gripvert_offset") 
     end
 end
