@@ -84,7 +84,7 @@ end
 SWEP.Customization = {
     {"att_perk", "att_perk_fmj", "att_perk_ricochet", "att_perk_headshot"}, 
 	
-    {"attachment_vm_ar_t9standard_stock", "attachment_vm_ar_t9standard_sprintout_01"}, 
+    {"attachment_vm_ar_t9standard_stock", "attachment_vm_ar_t9standard_mixstock_02" , "attachment_vm_ar_t9standard_mixstock_01" "attachment_vm_ar_t9standard_stalker_01" ,"attachment_vm_ar_t9standard_stalker_02" , "attachment_vm_ar_t9standard_sprintout_02", "attachment_vm_ar_t9standard_sprintout_01"}, 
 
     {"attachment_vm_ar_t9standard_barrel"}, 
 
