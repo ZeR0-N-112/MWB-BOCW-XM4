@@ -90,9 +90,10 @@ SWEP.Customization = {
 	"attachment_vm_ar_t9standard_sprintout_01"}, 
 
     {"attachment_vm_ar_t9standard_barrel", 
-	"attachment_vm_ar_t9standard_barrel_01", "attachment_vm_ar_t9standard_barrel_02"
-	, "attachment_vm_ar_t9standard_heavy_01", "attachment_vm_ar_t9standard_heavy_02", 
-	"attachment_vm_ar_t9standard_mixbarrel_01", "attachment_vm_ar_t9standard_mixbarrel_02"}, 
+	"attachment_vm_ar_t9standard_barrel_01", "attachment_vm_ar_t9standard_barrel_02",
+	"attachment_vm_ar_t9standard_heavy_01", "attachment_vm_ar_t9standard_heavy_02", 
+	"attachment_vm_ar_t9standard_mixbarrel_01", "attachment_vm_ar_t9standard_mixbarrel_02",
+	"attachment_vm_ar_t9standard_barrel_01_LOD0_short", "attachment_vm_ar_t9standard_barrel_02_LOD0_short"}, 
 
     {"attachment_vm_ar_t9standard_mag", "attachment_vm_ar_t9standard_extclip_02_LOD0", "attachment_vm_ar_t9standard_fastreload_01_LOD0", "attachment_vm_ar_t9standard_fastreload_02_LOD0", "attachment_vm_ar_t9standard_mixclip_01", "attachment_vm_ar_t9standard_mixclip_02"}, 
 	
