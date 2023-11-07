@@ -2,13 +2,11 @@ ATTACHMENT.Base = "att_magazine"
 ATTACHMENT.Name = "SAS Mag Clamp"
 ATTACHMENT.Model = Model("models/kyo/attachment_vm_ar_t9standard_fastreload_02_LOD0.mdl")
 ATTACHMENT.Icon = Material("viper/mw/attachments/icons/mike4/icon_attachment_ar_mike4_xmags2.vmt")
-
---Current mag
--- ATTACHMENT.BulletList = {
-    -- [1] = {"j_b_017"},
-    -- [2] = {"j_b_016"},
-    -- [3] = {"j_b_014"},
--- }
+ATTACHMENT.BulletList = {
+    [0] = {"j_loose_round"},
+    [1] = {"j_bullet"},
+    [2] = {"j_bullet_01"},
+}
 
 local BaseClass = GetAttachmentBaseClass(ATTACHMENT.Base)
 function ATTACHMENT:Stats(weapon)

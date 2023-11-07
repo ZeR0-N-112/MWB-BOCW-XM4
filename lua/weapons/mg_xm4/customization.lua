@@ -7,12 +7,12 @@ function SWEP:doSuppressorStats()
         Sounds = {
             Outside = {
                 Layer = Sound("Atmo_AR_Sup.Outside"),
-                Reflection = Sound("Reflection_ARSUP.Outside")
+                Reflection = Sound("")
             },
     
             Inside = { 
                 Layer = Sound("Atmo_AR_Sup.Inside"),
-                Reflection = Sound("Reflection_ARSUP.Inside")
+                Reflection = Sound("")
             }
         }
     }
@@ -88,7 +88,7 @@ SWEP.Customization = {
 
     {"attachment_vm_ar_t9standard_barrel"}, 
 
-    {"attachment_vm_ar_t9standard_mag", "attachment_vm_ar_t9standard_extclip_02_LOD0", "attachment_vm_ar_t9standard_fastreload_01_LOD0", "attachment_vm_ar_t9standard_fastreload_02_LOD0"}, 
+    {"attachment_vm_ar_t9standard_mag", "attachment_vm_ar_t9standard_extclip_02_LOD0", "attachment_vm_ar_t9standard_fastreload_01_LOD0", "attachment_vm_ar_t9standard_fastreload_02_LOD0", "attachment_vm_ar_t9standard_mixclip_01", "attachment_vm_ar_t9standard_mixclip_02"}, 
 	
     {"att_receiver", "attachment_vm_ar_t9standard_slingless"}, 
 	

@@ -53,12 +53,12 @@ SWEP.Reverb = {
     Sounds = {
         Outside = {
             Layer = Sound("Atmo_AR2.Outside"),
-            Reflection = Sound("Reflection_AR.Outside")
+            Reflection = Sound("")
         },
 
         Inside = { 
             Layer = Sound("Atmo_AR.Inside"),
-            Reflection = Sound("Reflection_AR.Inside")
+            Reflection = Sound("")
         }
     }
 }
