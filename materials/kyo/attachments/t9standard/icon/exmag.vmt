@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$basetexture" "VGUI/entities/exmag"
+	"$basetexture" "kyo/attachments/t9standard/icon/exmag"
 	"$nolod" 1
 	"$vertexalpha" 1
 	"$vertexcolor" 1

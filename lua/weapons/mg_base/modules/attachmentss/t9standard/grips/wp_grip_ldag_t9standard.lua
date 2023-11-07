@@ -14,11 +14,17 @@ function ATTACHMENT:Stats(weapon)
     weapon.Animations.Ads_Out.Fps = weapon.Animations.Ads_Out.Fps * 0.95
     weapon.Recoil.Horizontal[1] = weapon.Recoil.Horizontal[1] * 0.93
     weapon.Recoil.Vertical[2] = weapon.Recoil.Vertical[2] * 0.93
-	    if (weapon.AlternateGrips) then 
+
+end
+function ATTACHMENT:PostProcess(weapon)
+    BaseClass.PostProcess(self, weapon)
+
+    if (weapon.AlternateGrips) then 
         weapon:SetGripPoseParameter("grip_barshort_gripvert_offset") 
+    else
+        weapon:SetGripPoseParameter("grip_barshort_gripvert_offset")
     end
 end
-
 --ATTACHMENT.BonemergeToCategory = {"Barrels"}
 
 --ATTACHMENT.VElement = {Bone = "tag_barrel_attach",Position = Vector(0,0,0),Angles = Angle(0, 0, 0),Offsets = {}}

@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$basetexture" "VGUI/entities/heavybar_2"
+	"$basetexture" "kyo/attachments/t9standard/icon/heavybar_2"
 	"$nolod" 1
 	"$vertexalpha" 1
 	"$vertexcolor" 1

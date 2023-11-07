@@ -16,7 +16,14 @@ function ATTACHMENT:Stats(weapon)
     weapon.Animations.Draw.Fps = weapon.Animations.Draw.Fps * 1.3
     weapon.Recoil.Horizontal[1] = weapon.Recoil.Horizontal[1] * 1.15
     weapon.Recoil.Vertical[2] = weapon.Recoil.Vertical[2] * 0.7
-	    if (weapon.AlternateGrips) then 
+
+end
+function ATTACHMENT:PostProcess(weapon)
+    BaseClass.PostProcess(self, weapon)
+
+    if (weapon.AlternateGrips) then 
         weapon:SetGripPoseParameter("grip_barshort_gripvert_offset") 
+    else
+        weapon:SetGripPoseParameter("grip_gripvert_offset")
     end
 end
