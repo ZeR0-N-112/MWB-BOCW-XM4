@@ -188,7 +188,7 @@ $definebone "tag_hybrid" "tag_sling" 3.72 0 1.202 0 0 0 0 0 0 0 0 0
 $definebone "tag_ik_loc_ri" "tag_sling" -1.524 -1.859 -4.367 -0.854452 11.922965 -99.139117 0 0 0 0 0 0
 $definebone "tag_mag_attach" "tag_sling" 7.284 0 -2.195 0 0 0 0 0 0 0 0 0
 $definebone "tag_mag_show2" "tag_sling" 4.587 -0.785 0.022 0 0 0 0 0 0 0 0 0
-$definebone "tag_reflex" "tag_sling" 3.436 0 1.202 0 0 0 0 0 0 0 0 0
+$definebone "tag_reflex" "tag_sling" 3.436 0 1.202 0 0 0 1.2 0 0 0 0 0
 $definebone "tag_scope" "tag_sling" 3.041 0 1.202 0 0 0 0 0 0 0 0 0
 $definebone "tag_sight_off" "tag_sling" 5.136 0 1.534 0 0 0 0 0 0 0 0 0
 $definebone "tag_sight_on" "tag_sling" 4.657 0 1.545 0 0 0 0 0 0 0 0 0
@@ -206,7 +206,7 @@ $definebone "tag_mag_show" "j_ejectioncover" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "tag_flash" "tag_barrel_attach" 13.105999 0 -0.006 0 0 0 0 0 0 0 0 0
 $definebone "tag_grip_attach" "tag_barrel_attach" 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 3.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
 $definebone "tag_folding_grip" "tag_barrel_attach" 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
-$definebone "tag_laser_attach" "tag_barrel_attach" 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "tag_laser_attach" "tag_barrel_attach" 0.000000 0.000000 -1.400000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
 $definebone "tag_pistolgrip_attach" "tag_sling" 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
 $definebone "tag_ik_loc_le" "tag_barrel_attach" 1.868 1.809 -1.975 -0.983711 -26.68316 -127.114014 0 0 0 0 0 0
 $definebone "tag_grip_hide" "tag_barrel_attach" 6.072001 0 -1.238 0 0 0 0 0 0 0 0 0
@@ -534,6 +534,36 @@ $bonemerge "tag_folding_grip"
 $bonemerge "tag_laser_attach"
 $bonemerge "tag_pistolgrip_attach"
 
+$jigglebone "j_strap_front"
+{
+	is_flexible
+	{
+		length 10
+		tip_mass 5
+		pitch_stiffness 300
+		pitch_damping 100
+		yaw_stiffness 300
+		yaw_damping 100
+		along_stiffness 100
+		along_damping 0
+		angle_constraint 15
+	}
+}
+$jigglebone "j_strap_front_ring"
+{
+	is_flexible
+	{
+		length 10
+		tip_mass 5
+		pitch_stiffness 300
+		pitch_damping 100
+		yaw_stiffness 300
+		yaw_damping 100
+		along_stiffness 100
+		along_damping 0
+		angle_constraint 15
+	}
+}
 $sectionframes 30 31
 
 $poseparameter "aim_offset" 0 1 loop 0
