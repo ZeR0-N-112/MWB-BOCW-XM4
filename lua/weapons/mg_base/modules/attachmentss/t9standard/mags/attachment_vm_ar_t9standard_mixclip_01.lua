@@ -13,7 +13,6 @@ local BaseClass = GetAttachmentBaseClass(ATTACHMENT.Base)
 function ATTACHMENT:Stats(weapon)
     BaseClass.Stats(self, weapon)
     weapon.Primary.ClipSize = 30
-	weapon.Animations.Inspect = weapon.Animations.Inspect_alt
     weapon.Animations.Ads_In.Fps = weapon.Animations.Ads_In.Fps * 1.13
     weapon.Animations.Ads_Out.Fps = weapon.Animations.Ads_Out.Fps * 1.13
     weapon.Animations.Reload.Fps = weapon.Animations.Reload.Fps * 1.1

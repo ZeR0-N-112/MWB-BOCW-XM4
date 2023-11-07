@@ -1,6 +1,6 @@
 ATTACHMENT.Base = "att_magazine"
 ATTACHMENT.Name = "33rnd Tac Fast mag"
-ATTACHMENT.Model = Model("models/kyo/attachment_vm_ar_t9standard_mixclip_01_LOD0.mdl")
+ATTACHMENT.Model = Model("models/kyo/attachment_vm_ar_t9standard_mixclip_02_LOD0.mdl")
 ATTACHMENT.Icon = Material("viper/mw/attachments/icons/mike4/icon_attachment_ar_mike4_xmags.vmt")
 
 ATTACHMENT.BulletList = {
@@ -13,7 +13,6 @@ local BaseClass = GetAttachmentBaseClass(ATTACHMENT.Base)
 function ATTACHMENT:Stats(weapon)
     BaseClass.Stats(self, weapon)
     weapon.Primary.ClipSize = 33
-	weapon.Animations.Inspect = weapon.Animations.Inspect_alt
     weapon.Animations.Ads_In.Fps = weapon.Animations.Ads_In.Fps * 1.02
     weapon.Animations.Ads_Out.Fps = weapon.Animations.Ads_Out.Fps * 1.02
     weapon.Animations.Reload.Fps = weapon.Animations.Reload.Fps * 1.14
