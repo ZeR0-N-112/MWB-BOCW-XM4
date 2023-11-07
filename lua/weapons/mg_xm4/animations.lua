@@ -52,9 +52,9 @@ SWEP.Animations = {
 
     ["Reload"] = {
         Sequences = {"reload", "reload"},
-        Length = 2.2,
+        Length = 2.6,
         Fps = 30,
-        MagLength = 1.3,
+        MagLength = 1.5,
         NextSequence = "Idle",
         Events = {
             {Time = 0, Callback = function(self) self:AllowRuntimeMagPoseParam(false) end},
@@ -70,9 +70,9 @@ SWEP.Animations = {
     
     ["Reload_Fastmag"] = {
         Sequences = {"reload_fastmag", "reload_fastmag2"},
-        Length = 1.3,
+        Length = 2.3,
         Fps = 30,
-        MagLength = 0.9,
+        MagLength = 1.26,
         NextSequence = "Idle",
         Events = {
             {Time = 0.066, Callback = function(self) self:DisableGrip() self:AllowRuntimeMagPoseParam(false) end},
@@ -89,9 +89,9 @@ SWEP.Animations = {
 
     ["Reload_Xmag"] = {
         Sequences = {"reload_extmag", "reload_extmag"},
-        Length = 2.8,
+        Length = 2.6,
         Fps = 30,
-        MagLength = 1.46,
+        MagLength = 1.5,
         NextSequence = "Idle",
         Events = {
             {Time = 0, Callback = function(self) self:AllowRuntimeMagPoseParam(false) end},
@@ -107,9 +107,9 @@ SWEP.Animations = {
 
     ["Reload_Empty"] = {
         Sequences = {"reload_empty", "reload_empty"},
-        Length = 2.7,
+        Length = 3.26,
         Fps = 30,
-        MagLength = 1.33,
+        MagLength = 1.95,
         NextSequence = "Idle",
         Events = {
             {Time = 0, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_01")) self:AllowRuntimeMagPoseParam(false) end},
@@ -126,9 +126,9 @@ SWEP.Animations = {
 
     ["Reload_Empty_Fastmag"] = {
         Sequences = {"reload_empty_fastmag", "reload_empty_fastmag2"},
-        Length = 2,
+        Length = 2.5,
         Fps = 30,
-        MagLength = 0.83,
+        MagLength = 1.3,
         NextSequence = "Idle",
         Events = {
             {Time = 0, Callback = function(self) self:AllowRuntimeMagPoseParam(false) end},
@@ -164,9 +164,9 @@ SWEP.Animations = {
 
     ["Reload_Empty_Xmag"] = {
         Sequences = {"reload_empty_extmag", "reload_empty_extmag"},
-        Length = 2.96,
+        Length = 3.26,
         Fps = 30,
-        MagLength = 1.6,
+        MagLength = 1.95,
         NextSequence = "Idle",
         Events = {
             {Time = 0, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_01")) self:AllowRuntimeMagPoseParam(false) end},
