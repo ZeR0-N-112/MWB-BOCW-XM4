@@ -1,10 +1,10 @@
 // Created by Crowbar 0.74
 
-$modelname "attachment_vm_ar_t9standard_mag_LOD0.mdl"
+$modelname "attachment_vm_ar_t9standard_mixclip_02_LOD0.mdl"
 
 $bodygroup "grip"
 {
-	studio "attachment_vm_ar_t9standard_mag_LOD0.smd"
+	studio "attachment_vm_ar_t9standard_mixclip_02_LOD0.smd"
 }
 
 $bodygroup "grip"
@@ -30,7 +30,7 @@ $bbox -2.631 -0.554 -5.726 0.841 0.548 1.99
 
 
 $sequence "reference" {
-	"attachment_vm_ar_t9standard_mag_LOD0.smd"
+	"attachment_vm_ar_t9standard_mixclip_02_LOD0.smd"
 	fadein 0.2
 	fadeout 0.2
 	fps 30
@@ -46,4 +46,3 @@ $keyvalues
 //	}
 }
 
-$include "Bar.qci"
