@@ -139,7 +139,7 @@ SWEP.Customization = {
     "wp_grip_shift_t9standard",
     "wp_grip_td_t9standard",
     "wp_grip_uvg_t9standard",
-    "wp_grip_wbj_t9standard"},
+    "wp_grip_wbj_t9standard", },
 }
 
 --NECESSARY: it loads custom attachments from other authors
