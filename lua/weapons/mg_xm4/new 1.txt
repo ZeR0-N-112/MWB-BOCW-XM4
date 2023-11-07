@@ -1,2 +1,0 @@
-	eyeball "eye_right" "ValveBiped.Bip01_Head1" -1.359800 -4.103903 67.487100 "dark_eyeball_r" 1 4 "iris_unused" 0.68
-	eyeball "eye_left" "ValveBiped.Bip01_Head1" 1.353600 -4.103902 67.479105 "dark_eyeball_l" 1 -4 "iris_unused" 0.68

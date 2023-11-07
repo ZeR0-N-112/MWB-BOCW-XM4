@@ -12,4 +12,6 @@ function ATTACHMENT:Stats(weapon)
     weapon.Recoil.AdsMultiplier = 1.1
     weapon.Animations.Ads_In.Fps = weapon.Animations.Ads_In.Fps * 1.1
     weapon.Animations.Ads_Out.Fps = weapon.Animations.Ads_Out.Fps * 1.1
+    weapon.Recoil.Horizontal[1] = weapon.Recoil.Horizontal[1] * 0.88
+    weapon.Recoil.Vertical[2] = weapon.Recoil.Vertical[2] * 0.88
 end

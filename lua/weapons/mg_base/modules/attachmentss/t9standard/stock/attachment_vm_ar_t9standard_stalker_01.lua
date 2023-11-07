@@ -12,6 +12,8 @@ function ATTACHMENT:Stats(weapon)
     weapon.Recoil.AdsMultiplier = 1.1
     weapon.Animations.Ads_In.Fps = weapon.Animations.Ads_In.Fps * 0.9
     weapon.Animations.Ads_Out.Fps = weapon.Animations.Ads_Out.Fps * 0.9
-    weapon.Animations.Draw.Fps = weapon.Animations.Draw.Fps * 0.99
-    weapon.Animations.Holster.Fps = weapon.Animations.Holster.Fps * 0.99
+    weapon.Animations.Draw.Fps = weapon.Animations.Draw.Fps * 0.95
+    weapon.Recoil.Horizontal[1] = weapon.Recoil.Horizontal[1] * 0.66
+    weapon.Recoil.Vertical[2] = weapon.Recoil.Vertical[2] * 0.66
+    weapon.Animations.Holster.Fps = weapon.Animations.Holster.Fps * 0.95
 end
