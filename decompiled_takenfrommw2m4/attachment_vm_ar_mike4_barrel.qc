@@ -1,15 +1,15 @@
 // Created by Crowbar 0.74
 
-$modelname "attachment_vm_ar_t9standard_barrel_01.mdl"
+$modelname "attachment_vm_ar_t9standard_barrel_02.mdl"
 
 $bodygroup "slide"
 {
-	studio "attachment_vm_ar_t9standard_barrel_01_LOD0.smd"
+	studio "attachment_vm_ar_t9standard_barrel_02_LOD0.smd"
 }
 
 $bodygroup "tag_tip"
 {
-	studio "attachment_vm_ar_t9standard_barrel_01_tip.smd"
+	studio "attachment_vm_ar_t9standard_barrel_02_tip.smd"
 	blank
 }
 
@@ -35,7 +35,7 @@ $cbox 0 0 0 0 0 0
 $bbox -0.494 -1.164 -1.084 14.052 1.414 2.751
 
 $sequence "reference" {
-	"attachment_vm_ar_t9standard_barrel_01_LOD0.smd"
+	"attachment_vm_ar_t9standard_barrel_02_LOD0.smd"
 	fadein 0.2
 	fadeout 0.2
 	fps 30

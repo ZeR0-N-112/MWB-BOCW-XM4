@@ -624,7 +624,7 @@ $animation "@a_jumpdelta_corrective_animation" "v_mike4_anims\@a_jumpdelta_corre
 $animation "a_empty_idle_to_sub_corrective_animation" "v_mike4_anims\a_empty_idle_to_sub_corrective_animation.smd" {
 }
 
-$animation "a_delta_empty_additive_for_offset_corrective_animation" "v_mike4_anims\a_delta_empty_additive_for_offset_corrective_animation.smd" {
+$animation "a_delta_empty_additive_for_offset_corrective_animation" "anims\empty_additive.smd" {
 }
 
 $animation "a_grip_gripvert_idle_to_sub_corrective_animation" "v_mike4_anims\a_grip_gripvert_idle_to_sub_corrective_animation.smd" {
@@ -936,7 +936,7 @@ $animation "a_empty_idle_to_sub" "v_mike4_anims\a_empty_idle_to_sub.smd" {
 	subtract "a_empty_idle_to_sub_corrective_animation" 0
 }
 
-$animation "a_delta_empty_additive_for_offset" "v_mike4_anims\a_delta_empty_additive_for_offset.smd" {
+$animation "a_delta_empty_additive_for_offset" "anims\empty.smd" {
 	fps 30
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_delta_empty_additive_for_offset_corrective_animation" 0
@@ -1797,7 +1797,37 @@ $sequence "inspect" {
 	ikrule "rhand" touch "tag_ik_loc_ri" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 0  
 	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 1
 }
-
+$sequence "inspect_alt" {
+	"anims\vm_ar_mike4_inspect_generic_forxm4.smd"
+	{ event 9011 4 "0" }
+	{ event 9011 132 "1" }
+	{ event 5004 80 "Viewmodel.Small" }
+	fadein 0.2
+	fadeout 0.2
+	addlayer "jog_loop"
+	addlayer "jog_offset"
+	addlayer "walk_loop"
+	addlayer "sprint_loop"
+	addlayer "sprint_offset"
+	addlayer "freefall_loop"
+	addlayer "firemode_offset"
+	addlayer "empty_offset"
+	addlayer "grip_barshort_gripang_offset"
+	addlayer "grip_barshort_gripvert_offset"
+	addlayer "grip_gripang_offset"
+	addlayer "grip_gripvert_offset"
+ 
+ 
+ 
+ 
+ 
+ 
+	addlayer "grip_gripvertpro_offset"
+	addlayer "hybrid_offset"
+	fps 30
+	ikrule "rhand" touch "tag_ik_loc_ri" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 0  
+	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 1
+}
 $sequence "melee_miss_01" {
 	"anims\vm_ar_t9standard_gun_butt_miss_01.smd"
 	{ event 9011 0 "0" }
@@ -2083,7 +2113,7 @@ $sequence "hybrid_toggle_off" {
 }
 
 $sequence "ads_in" {
-	"anims\vm_ar_t9standard_idle.smd"
+	"anims\vm_ar_t9standard_ads_up.smd"
 	{ event 5004 1 "weap_ar_mike4_ads_up" }
 	{ event 9011 0 "1" }
 	{ event 9011 0 "1" }
@@ -2116,7 +2146,7 @@ $sequence "ads_in" {
 }
 
 $sequence "ads_out" {
-	"anims\vm_ar_t9standard_idle.smd"
+	"anims\vm_ar_t9standard_ads_down.smd"
 	{ event 5004 1 "weap_ar_mike4_ads_down" }
 	{ event 9011 0 "1" }
 	{ event 9011 0 "1" }
