@@ -134,12 +134,12 @@ SWEP.Customization = {
 
     {"att_grip", "attachment_vm_ar_t9standard_angledgrip01", "attachment_vm_ar_t9standard_angledgrip02", "attachment_vm_ar_t9standard_stubbygrip01", 
     "attachment_vm_ar_t9standard_stubbygrip02", "attachment_vm_ar_t9standard_vertgrip01", "attachment_vm_ar_t9standard_vertgrip02", 
-    "attachment_vm_ar_t9standard_vertgrip03", "wp_grip_ldag_m4",
+    "attachment_vm_ar_t9standard_vertgrip03", "wp_grip_ldag_t9standard",
     "wp_grip_mod3_t9standard",
     "wp_grip_shift_t9standard",
     "wp_grip_td_t9standard",
     "wp_grip_uvg_t9standard",
-    "wp_grip_wbj_t9standard"},
+    "wp_grip_wbj_t9standard", },
 }
 
 --NECESSARY: it loads custom attachments from other authors
