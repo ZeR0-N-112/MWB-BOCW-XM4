@@ -2,9 +2,9 @@
 //https://developer.valvesoftware.com/wiki/$phong
 "VertexLitGeneric"
 {
-    "$basetexture" "zeron\weapons\xm4\Black_rgb"
-    "$bumpmap" "zeron\weapons\xm4\Black_n"
-    "$phongexponenttexture" "zeron\weapons\xm4\Black_e"
+    "$basetexture" "zeron\weapons\xm4\attachment_vm_ar_t9standard_barrel_body_mount_01_rgb"
+    "$bumpmap" "zeron\weapons\xm4\attachment_vm_ar_t9standard_barrel_body_mount_01_n"
+    "$phongexponenttexture" "zeron\weapons\xm4\attachment_vm_ar_t9standard_barrel_body_mount_01_e"
 
     "$color2" "[0 0 0]"
     "$blendtintbybasealpha" "1"

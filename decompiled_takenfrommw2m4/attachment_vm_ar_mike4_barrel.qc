@@ -1,15 +1,15 @@
 // Created by Crowbar 0.74
 
-$modelname "attachment_vm_ar_t9standard_barrel_02.mdl"
+$modelname "attachment_vm_ar_t9standard_heavy_01_LOD0.mdl"
 
 $bodygroup "slide"
 {
-	studio "attachment_vm_ar_t9standard_barrel_02_LOD0.smd"
+	studio "attachment_vm_ar_t9standard_heavy_01_LOD0.smd"
 }
 
 $bodygroup "tag_tip"
 {
-	studio "attachment_vm_ar_t9standard_barrel_02_tip.smd"
+	studio "attachment_vm_ar_t9standard_heavy_01_tip.smd"
 	blank
 }
 
@@ -26,7 +26,7 @@ $mostlyopaque
 $cdmaterials "zeron/weapons/xm4/"
 
 
-$attachment "muzzle" "tag_flash_attachment" 0 0 0 rotate 0 0 0
+$attachment "muzzle" "tag_flash_attachment" -12.00 0.00 0.00 rotate -0 0 0
 $attachment "silencer" "tag_silencer" 0 0 0 rotate 0 0 0
 
 
@@ -35,7 +35,7 @@ $cbox 0 0 0 0 0 0
 $bbox -0.494 -1.164 -1.084 14.052 1.414 2.751
 
 $sequence "reference" {
-	"attachment_vm_ar_t9standard_barrel_02_LOD0.smd"
+	"attachment_vm_ar_t9standard_heavy_01_LOD0.smd"
 	fadein 0.2
 	fadeout 0.2
 	fps 30
