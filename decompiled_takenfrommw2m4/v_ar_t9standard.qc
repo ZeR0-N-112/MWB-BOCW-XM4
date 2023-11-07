@@ -207,6 +207,7 @@ $definebone "tag_flash" "tag_barrel_attach" 13.105999 0 -0.006 0 0 0 0 0 0 0 0 0
 $definebone "tag_grip_attach" "tag_barrel_attach" 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 3.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
 $definebone "tag_folding_grip" "tag_barrel_attach" 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
 $definebone "tag_laser_attach" "tag_barrel_attach" 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "tag_pistolgrip_attach" "tag_sling" 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
 $definebone "tag_ik_loc_le" "tag_barrel_attach" 1.868 1.809 -1.975 -0.983711 -26.68316 -127.114014 0 0 0 0 0 0
 $definebone "tag_grip_hide" "tag_barrel_attach" 6.072001 0 -1.238 0 0 0 0 0 0 0 0 0
 $definebone "j_hybrid_scope" "tag_hybrid" 1.086 -0.661 -0.149 0 0 0 0 0 0 0 0 0
@@ -528,6 +529,10 @@ $bonemerge "j_index_le_4"
 $bonemerge "j_index_ri_4"
 $bonemerge "j_bullet2"
 $bonemerge "j_loose_round"
+$bonemerge "tag_grip_attach" 
+$bonemerge "tag_folding_grip"
+$bonemerge "tag_laser_attach"
+$bonemerge "tag_pistolgrip_attach"
 
 $sectionframes 30 31
 
