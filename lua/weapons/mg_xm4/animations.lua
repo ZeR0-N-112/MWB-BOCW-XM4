@@ -68,8 +68,8 @@ SWEP.Animations = {
         }
     },
     
-    ["Reload_Fast"] = {
-        Sequences = {"reload_fast", "reload_fast2"},
+    ["Reload_Fastmag"] = {
+        Sequences = {"reload_fastmag", "reload_fastmag2"},
         Length = 1.3,
         Fps = 30,
         MagLength = 0.9,
@@ -84,46 +84,11 @@ SWEP.Animations = {
             {Time = 1.2, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_fast_05")) end},
             {Time = 1.16, Callback = function(self) self:EnableGrip() end},
         }
-    },
-
-    ["Reload_Calsmg"] = {
-        Sequences = {"reload_calsmg"},
-        Length = 2.2,
-        Fps = 30,
-        MagLength = 1.3,
-        NextSequence = "Idle",
-        Events = {
-            {Time = 0, Callback = function(self) self:AllowRuntimeMagPoseParam(false) end},
-            {Time = 0, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_01")) end},
-            {Time = 0.1, Callback = function(self) self:DisableGrip() end},
-            {Time = 0.7, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_smg_02")) end},
-            {Time = 1.13, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_smg_03")) end},
-            {Time = 1.25, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_smg_04")) end},
-            {Time = 1.76, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_05")) end},
-            {Time = 2, Callback = function(self) self:EnableGrip() end}
-        }
-    },
-        
-    ["Reload_Calsmg_Fast"] = {
-        Sequences = {"reload_calsmg_fast"},
-        Length = 1.3,
-        Fps = 30,
-        MagLength = 0.9,
-        NextSequence = "Idle",
-        Events = {
-            {Time = 0.066, Callback = function(self) self:DisableGrip() self:AllowRuntimeMagPoseParam(false) end},
-            {Time = 0, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_fast_01")) end},
-            {Time = 0.36, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_smg_02")) end},
-            {Time = 0.5, Callback = function(self) self:DoSpatialSound(Sound("MW_MagazineDrop.AR.Poly"), Vector(0, 0, 40)) fillMagBeforeMagin(self) end},
-            {Time = 0.73, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_smg_03")) end},
-            {Time = 0.93, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_smg_04")) end},
-            {Time = 1.2, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_fast_05")) end},
-            {Time = 1.167, Callback = function(self) self:EnableGrip() end},
-        }
-    },
+		
+    }, 
 
     ["Reload_Xmag"] = {
-        Sequences = {"reload_xmag"},
+        Sequences = {"reload_extmag", "reload_extmag"},
         Length = 2.8,
         Fps = 30,
         MagLength = 1.46,
@@ -137,58 +102,6 @@ SWEP.Animations = {
             {Time = 1.33, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_04")) end},
             {Time = 1.76, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_05")) end},
             {Time = 2, Callback = function(self) self:EnableGrip() end}
-        }
-    },
-
-    ["Reload_Xmag_Fast"] = {
-        Sequences = {"reload_xmag_fast"},
-        Length = 1.93,
-        Fps = 30,
-        MagLength = 1.16,
-        NextSequence = "Idle",
-        Events = {
-            {Time = 0.066, Callback = function(self) self:DisableGrip() self:AllowRuntimeMagPoseParam(false) end},
-            {Time = 0, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_fast_01")) end},
-            {Time = 0.3, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_fast_02")) end},
-            {Time = 0.5, Callback = function(self) self:DoSpatialSound(Sound("MW_MagazineDrop.AR.Poly"), Vector(0, 0, 40)) fillMagBeforeMagin(self) end},
-            {Time = 0.73, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_fast_03")) end},
-            {Time = 0.93, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_fast_04")) end},
-            {Time = 1.2, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_fast_05")) end},
-            {Time = 1.16, Callback = function(self) self:EnableGrip() end},
-        }
-    },
-
-    ["Reload_XmagLrg"] = {
-        Sequences = {"reload_xmaglrg"},
-        Length = 3.06,
-        Fps = 30,
-        MagLength = 1.7,
-        NextSequence = "Idle",
-        Events = {
-            {Time = 0, Callback = function(self) self:AllowRuntimeMagPoseParam(false) end},
-            {Time = 0, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_01")) end},
-            {Time = 0.1, Callback = function(self) self:DisableGrip() end},
-            {Time = 0.7, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_xmag_02")) end},
-            {Time = 1.13, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_xmag_03")) end},
-            {Time = 1.76, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_05")) end},
-            {Time = 2, Callback = function(self) self:EnableGrip() end}
-        }
-    },
-
-    ["Reload_XmagLrg_Fast"] = {
-        Sequences = {"reload_xmaglrg_fast"},
-        Length = 2.2,
-        Fps = 30,
-        MagLength = 1.4,
-        NextSequence = "Idle",
-        Events = {
-            {Time = 0.066, Callback = function(self) self:DisableGrip() self:AllowRuntimeMagPoseParam(false) end},
-            {Time = 0, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_fast_01")) end},
-            {Time = 0.36, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_xmag_02")) end},
-            {Time = 0.5, Callback = function(self) self:DoSpatialSound(Sound("MW_MagazineDrop.AR.Poly"), Vector(0, 0, 40)) fillMagBeforeMagin(self) end},
-            {Time = 0.73, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_xmag_03")) end},
-            {Time = 1.2, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_fast_05")) end},
-            {Time = 1.167, Callback = function(self) self:EnableGrip() end},
         }
     },
 
@@ -211,8 +124,8 @@ SWEP.Animations = {
         }
     },
 
-    ["Reload_Empty_Fast"] = {
-        Sequences = {"reload_empty_fast", "reload_empty_fast2"},
+    ["Reload_Empty_Fastmag"] = {
+        Sequences = {"reload_empty_fastmag", "reload_empty_fastmag2"},
         Length = 2,
         Fps = 30,
         MagLength = 0.83,
@@ -227,25 +140,6 @@ SWEP.Animations = {
             {Time = 1.1, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_fast_04")) end},
             {Time = 1.4, Callback = function(self) self:EnableGrip() end},
             {Time = 1.4, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_fast_05")) end},
-        }
-    },
-
-    ["Reload_Empty_Calsmg"] = {
-        Sequences = {"reload_empty_calsmg"},
-        Length = 2.3,
-        Fps = 30,
-        MagLength = 1.4,
-        NextSequence = "Idle",
-        Events = {
-            {Time = 0, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_01")) self:AllowRuntimeMagPoseParam(false) end},
-            {Time = 0.033, Callback = function(self) self:DisableGrip() end},
-            {Time = 0.26, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_smg_02")) end},
-            {Time = 0.8, Callback = function(self) self:DoSpatialSound(Sound("MW_MagazineDrop.AR.Poly"), Vector(0, 0, 40)) fillMagBeforeMagin(self) end},
-            {Time = 1.13, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_smg_03")) end},
-            {Time = 1.33, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_smg_04")) end},
-            {Time = 1.76, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_05")) end},
-            {Time = 2.13, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_06")) end},
-            {Time = 2.06, Callback = function(self) self:EnableGrip() end},
         }
     },
     
@@ -269,7 +163,7 @@ SWEP.Animations = {
     },
 
     ["Reload_Empty_Xmag"] = {
-        Sequences = {"reload_empty_xmag"},
+        Sequences = {"reload_empty_extmag", "reload_empty_extmag"},
         Length = 2.96,
         Fps = 30,
         MagLength = 1.6,
@@ -284,64 +178,6 @@ SWEP.Animations = {
             {Time = 1.76, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_05")) end},
             {Time = 2.13, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_06")) end},
             {Time = 2.06, Callback = function(self) self:EnableGrip() end},
-        }
-    },
-
-    ["Reload_Empty_Xmag_Fast"] = {
-        Sequences = {"reload_empty_xmag_fast"},
-        Length = 2.26,
-        Fps = 30,
-        MagLength = 1.1,
-        NextSequence = "Idle",
-        Events = {
-            {Time = 0, Callback = function(self) self:AllowRuntimeMagPoseParam(false) end},
-            {Time = 0, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_fast_01")) end},
-            {Time = 0.1, Callback = function(self) self:DisableGrip() end},
-            {Time = 0.23, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_fast_02")) end},
-            {Time = 0.75, Callback = function(self) self:DoSpatialSound(Sound("MW_MagazineDrop.AR.Poly"), Vector(0, 0, 40)) fillMagBeforeMagin(self) end},
-            {Time = 0.83, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_fast_03")) end},
-            {Time = 1.1, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_fast_04")) end},
-            {Time = 1.4, Callback = function(self) self:EnableGrip() end},
-            {Time = 1.4, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_fast_05")) end},
-        }
-    },
-
-  ["Reload_Empty_XmagLrg"] = {
-        Sequences = {"reload_empty_xmaglrg"},
-        Length = 3.26,
-        Fps = 30,
-        MagLength = 1.86,
-        NextSequence = "Idle",
-        Events = {
-            {Time = 0, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_01")) self:AllowRuntimeMagPoseParam(false) end},
-            {Time = 0.06, Callback = function(self) self:DisableGrip() end},
-            {Time = 0.35, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_xmag_02")) end},
-            {Time = 0.8, Callback = function(self) self:DoSpatialSound(Sound("MW_MagazineDrop.AR.Poly"), Vector(0, 0, 40)) fillMagBeforeMagin(self) end},
-            {Time = 1.3, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_xmag_03")) end},
-            {Time = 1.33, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_04")) end},
-            {Time = 1.76, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_05")) end},
-            {Time = 2.13, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_06")) end},
-            {Time = 2.06, Callback = function(self) self:EnableGrip() end},
-            {Time = 2.06, Callback = function(self) end},
-        }
-    },
-
-   ["Reload_Empty_XmagLrg_Fast"] = {
-        Sequences = {"reload_empty_xmaglrg_fast"},
-        Length = 2.53,
-        Fps = 30,
-        MagLength = 1.33,
-        NextSequence = "Idle",
-        Events = {
-            {Time = 0, Callback = function(self) self:AllowRuntimeMagPoseParam(false) end},
-            {Time = 0, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_fast_01")) end},
-            {Time = 0.1, Callback = function(self) self:DisableGrip() end},
-            {Time = 0.23, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_fast_02")) end},
-            {Time = 0.75, Callback = function(self) self:DoSpatialSound(Sound("MW_MagazineDrop.AR.Poly"), Vector(0, 0, 40)) fillMagBeforeMagin(self) end},
-            {Time = 0.83, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_fast_03")) end},
-            {Time = 1.1, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_fast_04")) end},
-            {Time = 1.4, Callback = function(self) self:EnableGrip() end},
-            {Time = 1.4, Callback = function(self) self:DoSound(Sound("wfoly_plr_ar_mike4_reload_empty_fast_05")) end},
         }
     },
 
@@ -467,9 +303,10 @@ SWEP.Animations = {
             {Time = 4.26, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.5")) end},
             {Time = 4.3, Callback = function(self) self:EnableGrip() end},
         }
+		
     },
-	    ["inspect_xmag"] = {
-        Sequences = {"inspect_xmaglrg"},
+	    ["Inspect_alt"] = {
+        Sequences = {"inspect_alt"},
         Length = 5,
         Fps = 30,
         NextSequence = "Idle",
@@ -498,51 +335,7 @@ SWEP.Animations = {
             {Time = 4.3, Callback = function(self) self:EnableGrip() end},
         }
     },
-    ["Inspect_empty"] = {
-        Sequences = {"inspect"},
-        Length = 5,
-        Fps = 30,
-        NextSequence = "Idle",
-        Events = {
-            {Time = 0, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.1")) self:AllowRuntimeMagPoseParam(true) end},
-            {Time = 0.13, Callback = function(self) self:DisableGrip() end},
-            {Time = 1.3, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.2")) end},
-            {Time = 2.36, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.3")) end},
-            {Time = 3.6, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.4")) end},
-            {Time = 4.26, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.5")) end},
-            {Time = 4.3, Callback = function(self) self:EnableGrip() end},
-        }
-    },
-	    ["inspect_empty_xmag"] = {
-        Sequences = {"inspect_empty_xmag"},
-        Length = 5,
-        Fps = 30,
-        NextSequence = "Idle",
-        Events = {
-            {Time = 0, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.1")) self:AllowRuntimeMagPoseParam(true) end},
-            {Time = 0.13, Callback = function(self) self:DisableGrip() end},
-            {Time = 1.3, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.2")) end},
-            {Time = 2.36, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.3")) end},
-            {Time = 3.6, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.4")) end},
-            {Time = 4.26, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.5")) end},
-            {Time = 4.3, Callback = function(self) self:EnableGrip() end},
-        }
-    },
-	    ["inspect_empty_xmaglrg"] = {
-        Sequences = {"inspect_empty_xmaglrg"},
-        Length = 5,
-        Fps = 30,
-        NextSequence = "Idle",
-        Events = {
-            {Time = 0, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.1")) self:AllowRuntimeMagPoseParam(true) end},
-            {Time = 0.13, Callback = function(self) self:DisableGrip() end},
-            {Time = 1.3, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.2")) end},
-            {Time = 2.36, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.3")) end},
-            {Time = 3.6, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.4")) end},
-            {Time = 4.26, Callback = function(self) self:DoSound(Sound("mw19.mike4.inspect.5")) end},
-            {Time = 4.3, Callback = function(self) self:EnableGrip() end},
-        }
-    },
+    
     ["Jog_Out"] = {
         Sequences = {"jog_out"},
         Fps = 30,

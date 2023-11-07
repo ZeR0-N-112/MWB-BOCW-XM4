@@ -82,13 +82,13 @@ function SWEP:doCalConversionStats()
 end
 
 SWEP.Customization = {
-    {"att_perk", "attachment_vm_ar_mike4_perk_soh", "att_perk_fmj", "att_perk_ricochet", "att_perk_headshot"}, 
+    {"att_perk", "att_perk_fmj", "att_perk_ricochet", "att_perk_headshot"}, 
 	
     {"attachment_vm_ar_t9standard_stock"}, 
 
     {"attachment_vm_ar_t9standard_barrel"}, 
 
-    {"attachment_vm_ar_t9standard_mag"}, 
+    {"attachment_vm_ar_t9standard_mag", "attachment_vm_ar_t9standard_extclip_02_LOD0", "attachment_vm_ar_t9standard_fastreload_01_LOD0", "attachment_vm_ar_t9standard_fastreload_02_LOD0"}, 
 	
     {"att_receiver", "attachment_vm_ar_t9standard_slingless"}, 
 	
@@ -108,7 +108,7 @@ SWEP.Customization = {
     "att_vm_holo_west01", "att_vm_holo_west02", "att_vm_holo_east01", "att_vm_reflex_east01",
     "att_vm_reflex_east02", "att_vm_reflex_west02_tall", "att_vm_reflex_west03",
     "att_vm_thermal_east01", "att_vm_thermal_west01", "att_vm_thermal_east01_hybrid",
-    "att_vm_hybrid_west01", "att_vm_hybrid_west02", "att_vm_hybrid_west02_thermal", "att_vm_reflex_west04", "att_vm_2x_west01",
+    "att_vm_hybrid_west01", "att_vm_reflex_west04", "att_vm_2x_west01",
     "att_vm_hybrid_west03", "att_vm_4x_east01",
     "att_vm_4x_west01", "att_vm_4x_west02",
     "att_vm_scope_mike14", "att_vm_scope_vz", "wp_510c",       "wp_6x",       "wp_512gd",       "wp_mw2_mini06",
