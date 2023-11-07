@@ -84,7 +84,7 @@ end
 SWEP.Customization = {
     {"att_perk", "att_perk_fmj", "att_perk_ricochet", "att_perk_headshot"}, 
 	
-    {"attachment_vm_ar_t9standard_stock"}, 
+    {"attachment_vm_ar_t9standard_stock", "attachment_vm_ar_t9standard_sprintout_01"}, 
 
     {"attachment_vm_ar_t9standard_barrel"}, 
 
@@ -122,17 +122,17 @@ SWEP.Customization = {
     "wp_sf2",       "wp_x5",       "wp_lco",
     "wp_uh1",       "wp_x8",       "wp_mro_8", "wp_acog_rm45"},
 
-    {"att_laser", "attachment_vm_ar_akilo47_laser01_cylinder", "attachment_vm_ar_akilo47_laser02_cylinder", 
-    "attachment_vm_ar_akilo47_laser03_cylinder"},
+    {"att_laser", "attachment_vm_ar_t9standard_laser01_cylinder", "attachment_vm_ar_t9standard_laser02_cylinder", 
+    "attachment_vm_ar_t9standard_laser03_cylinder"},
 
-    {"att_grip", "attachment_vm_ar_mike4_angledgrip01", "attachment_vm_ar_mike4_angledgrip02", "attachment_vm_ar_mike4_stubbygrip01", 
-    "attachment_vm_ar_mike4_stubbygrip02", "attachment_vm_ar_mike4_vertgrip01", "attachment_vm_ar_mike4_vertgrip02", 
-    "attachment_vm_ar_mike4_vertgrip03", "wp_grip_ldag_m4",
-    "wp_grip_mod3_m4",
-    "wp_grip_shift_m4",
-    "wp_grip_td_m4",
-    "wp_grip_uvg_m4",
-    "wp_grip_wbj_m4"},
+    {"att_grip", "attachment_vm_ar_t9standard_angledgrip01", "attachment_vm_ar_t9standard_angledgrip02", "attachment_vm_ar_t9standard_stubbygrip01", 
+    "attachment_vm_ar_t9standard_stubbygrip02", "attachment_vm_ar_t9standard_vertgrip01", "attachment_vm_ar_t9standard_vertgrip02", 
+    "attachment_vm_ar_t9standard_vertgrip03", "wp_grip_ldag_m4",
+    "wp_grip_mod3_t9standard",
+    "wp_grip_shift_t9standard",
+    "wp_grip_td_t9standard",
+    "wp_grip_uvg_t9standard",
+    "wp_grip_wbj_t9standard"},
 }
 
 --NECESSARY: it loads custom attachments from other authors

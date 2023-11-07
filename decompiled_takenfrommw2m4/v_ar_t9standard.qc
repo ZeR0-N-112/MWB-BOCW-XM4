@@ -2118,7 +2118,7 @@ $sequence "hybrid_toggle_off" {
 }
 
 $sequence "ads_in" {
-	"anims\vm_ar_t9standard_ads_up.smd"
+	"anims\vm_ar_t9standard_idle.smd"
 	{ event 5004 1 "weap_ar_mike4_ads_up" }
 	{ event 9011 0 "1" }
 	{ event 9011 0 "1" }
@@ -2151,7 +2151,7 @@ $sequence "ads_in" {
 }
 
 $sequence "ads_out" {
-	"anims\vm_ar_t9standard_ads_down.smd"
+	"anims\vm_ar_t9standard_idle.smd"
 	{ event 5004 1 "weap_ar_mike4_ads_down" }
 	{ event 9011 0 "1" }
 	{ event 9011 0 "1" }

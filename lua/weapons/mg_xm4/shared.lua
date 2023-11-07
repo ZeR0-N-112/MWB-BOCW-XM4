@@ -37,7 +37,7 @@ SWEP.Primary.ClipSize = 30
 SWEP.Primary.Automatic = true
 SWEP.Primary.BurstRounds = 1
 SWEP.Primary.BurstDelay = 0
-SWEP.Primary.RPM = 811  
+SWEP.Primary.RPM = 722 
 SWEP.CanChamberRound = true  
   
 SWEP.ParticleEffects = {
