@@ -1,5 +1,5 @@
 ATTACHMENT.Base = "att_barrel"
-ATTACHMENT.Name = "20'' M16 Rifle"
+ATTACHMENT.Name = "13.7'' Extended"
 ATTACHMENT.Model = Model("models/kyo/attachment_vm_ar_t9standard_barrel_01.mdl")
 
 function ATTACHMENT:Stats(weapon)
