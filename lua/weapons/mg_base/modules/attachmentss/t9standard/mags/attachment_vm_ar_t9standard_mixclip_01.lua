@@ -1,7 +1,7 @@
 ATTACHMENT.Base = "att_magazine"
 ATTACHMENT.Name = "30rnd Fastmag"
 ATTACHMENT.Model = Model("models/kyo/attachment_vm_ar_t9standard_mixclip_01_LOD0.mdl")
-ATTACHMENT.Icon = Material("viper/mw/attachments/icons/mike4/icon_attachment_ar_mike4_xmags.vmt")
+ATTACHMENT.Icon = Material("kyo/attachments/t9standard/icon/mixmag_1.vmt")
 
 ATTACHMENT.BulletList = {
     [0] = {"j_loose_round"},

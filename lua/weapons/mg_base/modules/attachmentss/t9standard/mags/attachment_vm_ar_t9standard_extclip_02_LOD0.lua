@@ -1,7 +1,7 @@
 ATTACHMENT.Base = "att_magazine"
 ATTACHMENT.Name = "STANAG 50 Rnd"
 ATTACHMENT.Model = Model("models/kyo/attachment_vm_ar_t9standard_extclip_02_LOD0.mdl")
-ATTACHMENT.Icon = Material("viper/mw/attachments/icons/mike4/icon_attachment_ar_mike4_xmags.vmt")
+ATTACHMENT.Icon = Material("kyo/attachments/t9standard/icon/exmag.vmt")
 
 ATTACHMENT.BulletList = {
     [0] = {"j_loose_round"},
