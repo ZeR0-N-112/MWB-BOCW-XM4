@@ -71,16 +71,6 @@ SWEP.Firemodes = {
         end
     },
 
-    [2] = {
-        Name = "Semi Auto",
-        OnSet = function(self)
-            self.Primary.Automatic = false
-            --self.Primary.RPM = 450
-
-            return "Firemode_Semi"
-        end
-    },
-
 }
 
 SWEP.BarrelSmoke = {

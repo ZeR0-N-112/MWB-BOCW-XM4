@@ -41,5 +41,3 @@ $keyvalues
 //		"value" "g:\other\gmod\source-files-mw\attachments\mike4\attachment_stock.qc"
 //	}
 }
-
-$include "Bar.qci"

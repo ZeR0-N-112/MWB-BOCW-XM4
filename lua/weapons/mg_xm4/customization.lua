@@ -89,7 +89,9 @@ SWEP.Customization = {
     {"attachment_vm_ar_t9standard_barrel"}, 
 
     {"attachment_vm_ar_t9standard_mag"}, 
-
+	
+    {"att_receiver", "attachment_vm_ar_t9standard_slingless"}, 
+	
     {"att_muzzle", "att_vm_breacher01", "att_vm_breacher02", "att_vm_compensator01", 
     "att_vm_compensator02", "att_vm_flashhider01", "att_vm_flashhider02", 
     "att_vm_flashhider03", "att_vm_flashhider04", "att_vm_muzzlebrake01",
@@ -120,9 +122,8 @@ SWEP.Customization = {
     "wp_sf2",       "wp_x5",       "wp_lco",
     "wp_uh1",       "wp_x8",       "wp_mro_8", "wp_acog_rm45"},
 
-    {"att_laser", "attachment_vm_ar_mike4_laser01", "attachment_vm_ar_mike4_laser02", "attachment_vm_ar_mike4_laser03",
-	"wp_ngal",   "wp_peq",   "wp_wrxe",
-	"wp_dbala3", "wp_ls321", "wp_mawl"},
+    {"att_laser", "attachment_vm_ar_akilo47_laser01_cylinder", "attachment_vm_ar_akilo47_laser02_cylinder", 
+    "attachment_vm_ar_akilo47_laser03_cylinder"},
 
     {"att_grip", "attachment_vm_ar_mike4_angledgrip01", "attachment_vm_ar_mike4_angledgrip02", "attachment_vm_ar_mike4_stubbygrip01", 
     "attachment_vm_ar_mike4_stubbygrip02", "attachment_vm_ar_mike4_vertgrip01", "attachment_vm_ar_mike4_vertgrip02", 
