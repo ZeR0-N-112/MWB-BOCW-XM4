@@ -1,7 +1,7 @@
 AddCSLuaFile()
 
 function SWEP:doSuppressorStats()
-    self.Primary.Sound = Sound("mw19.mike4.fire.s")
+    self.Primary.Sound = Sound("fly_ar_standard_fire_s")
     self.Reverb = {
         RoomScale = 50000,
         Sounds = {

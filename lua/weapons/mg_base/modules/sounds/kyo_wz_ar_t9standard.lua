@@ -1,29 +1,20 @@
 
 -- Mike4 --
 sound.Add({
-    name =           "mw19.mike4.fire",
+    name =           "fly_ar_standard_fire",
     channel =        CHAN_WEAPON,
     level = 140,
     volume =         1,
-    sound = {"zeron/wz/bocw/t9standard/weap_t9arstandard_fire_plr_01.wav",
-             "zeron/wz/bocw/t9standard/weap_t9arstandard_fire_plr_02.wav",
-             "zeron/wz/bocw/t9standard/weap_t9arstandard_fire_plr_03.wav",
-             "zeron/wz/bocw/t9standard/weap_t9arstandard_fire_plr_04.wav",
-             "zeron/wz/bocw/t9standard/weap_t9arstandard_fire_plr_05.wav",
-             "zeron/wz/bocw/t9standard/weap_t9arstandard_fire_plr_06.wav"
+    sound = {"zeron/wz/bocw/t9standard/wpn_ar_standard_start_act.wav",
+
             }              
 })
 sound.Add({
-    name =           "mw19.mike4.fire.s",
+    name =           "fly_ar_standard_fire_s",
     channel =        CHAN_WEAPON,
     level = 140,
     volume =         1,
-    sound = {"zeron/wz/bocw/t9standard/weap_t9arstandard_sup_plr_01.wav",
-             "zeron/wz/bocw/t9standard/weap_t9arstandard_sup_plr_02.wav",
-             "zeron/wz/bocw/t9standard/weap_t9arstandard_sup_plr_03.wav",
-             "zeron/wz/bocw/t9standard/weap_t9arstandard_sup_plr_04.wav",
-             "zeron/wz/bocw/t9standard/weap_t9arstandard_sup_plr_05.wav",
-             "zeron/wz/bocw/t9standard/weap_t9arstandard_sup_plr_06.wav"
+    sound = {"zeron/wz/bocw/t9standard/wpn_ar_standard_start_ads.wav",
             }              
 })
 

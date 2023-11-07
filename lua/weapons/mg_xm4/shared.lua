@@ -31,7 +31,7 @@ SWEP.Slot = 2
 SWEP.HoldType = "Rifle"
 
 SWEP.AlternateGrips = false
-SWEP.Primary.Sound = Sound("mwii.mike4.fire")
+SWEP.Primary.Sound = Sound("fly_ar_standard_fire")
 SWEP.Primary.Ammo = "Ar2"
 SWEP.Primary.ClipSize = 30
 SWEP.Primary.Automatic = true
