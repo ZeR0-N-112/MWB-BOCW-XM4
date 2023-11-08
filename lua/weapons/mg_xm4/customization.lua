@@ -87,7 +87,7 @@ SWEP.Customization = {
     {"attachment_vm_ar_t9standard_stock", "attachment_vm_ar_t9standard_mixstock_02",
 	"attachment_vm_ar_t9standard_mixstock_01", "attachment_vm_ar_t9standard_stalker_01",
 	"attachment_vm_ar_t9standard_stalker_02" , "attachment_vm_ar_t9standard_sprintout_02",
-	"attachment_vm_ar_t9standard_sprintout_01"}, 
+	"attachment_vm_ar_t9standard_sprintout_01", "attachment_vm_ar_t9standard_mixstock_v27"}, 
 
     {"attachment_vm_ar_t9standard_barrel", 
 	"attachment_vm_ar_t9standard_barrel_01", "attachment_vm_ar_t9standard_barrel_02",
@@ -97,7 +97,7 @@ SWEP.Customization = {
 
     {"attachment_vm_ar_t9standard_mag", "attachment_vm_ar_t9standard_extclip_02_LOD0", "attachment_vm_ar_t9standard_fastreload_01_LOD0", "attachment_vm_ar_t9standard_fastreload_02_LOD0", "attachment_vm_ar_t9standard_mixclip_01", "attachment_vm_ar_t9standard_mixclip_02"}, 
 	
-    {"att_receiver", "attachment_vm_ar_t9standard_slingless"}, 
+    {"att_receiver", "attachment_vm_ar_t9standard_slingless", "attachment_vm_ar_t9standard_v27", "attachment_vm_ar_t9standard_v15"}, 
 	
     {"att_muzzle", "att_vm_breacher01", "att_vm_breacher02", "att_vm_compensator01", 
     "att_vm_compensator02", "att_vm_flashhider01", "att_vm_flashhider02", 

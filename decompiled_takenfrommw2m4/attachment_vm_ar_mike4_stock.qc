@@ -1,10 +1,10 @@
 // Created by Crowbar 0.74
 
-$modelname "attachment_vm_ar_t9standard_mixstock_02_LOD0.mdl"
+$modelname "attachment_vm_ar_t9standard_mixstock_01_v27_LOD0.mdl"
 
 $bodygroup "slide"
 {
-	studio "attachment_vm_ar_t9standard_mixstock_02_LOD0.smd"
+	studio "attachment_vm_ar_t9standard_mixstock_01_v27_LOD0.smd"
 }
 
 
