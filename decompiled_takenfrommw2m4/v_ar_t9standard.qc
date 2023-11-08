@@ -564,6 +564,36 @@ $jigglebone "j_strap_front_ring"
 		angle_constraint 15
 	}
 }
+$jigglebone "j_strap_rear"
+{
+	is_flexible
+	{
+		length 10
+		tip_mass 5
+		pitch_stiffness 300
+		pitch_damping 100
+		yaw_stiffness 300
+		yaw_damping 100
+		along_stiffness 100
+		along_damping 0
+		angle_constraint 15
+	}
+}
+$jigglebone "j_strap_rear_ring"
+{
+	is_flexible
+	{
+		length 10
+		tip_mass 5
+		pitch_stiffness 300
+		pitch_damping 100
+		yaw_stiffness 300
+		yaw_damping 100
+		along_stiffness 100
+		along_damping 0
+		angle_constraint 15
+	}
+}
 $sectionframes 30 31
 
 $poseparameter "aim_offset" 0 1 loop 0
@@ -1802,8 +1832,11 @@ $sequence "fire" {
 $sequence "inspect" {
 	"anims\vm_ar_t9standard_inspect.smd"
 	{ event 5004 1 "fly_ar_standard_inspect_pt1" }
+	{ event 5004 41 "fly_ar_standard_inspect_pt2" }
 	{ event 9011 4 "0" }
-	{ event 5004 113 "fly_ar_standard_inspect_pt2" }
+	{ event 5004 88 "fly_ar_standard_inspect_pt3" }
+	{ event 5004 112 "fly_ar_standard_inspect_pt4" }
+    { event 5004 132 "fly_ar_standard_inspect_pt5" }
 	{ event 9011 147 "1" }
 	{ event 5004 138 "Viewmodel.Small" }
 	fadein 0.2
@@ -1833,9 +1866,12 @@ $sequence "inspect" {
 	ikrule "lhand" touch "tag_ik_loc_le" contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 1
 }
 $sequence "inspect_alt" {
-	"anims\vm_ar_mike4_inspect_generic_forxm4.smd"
+	"anims\vm_ar_t9longburst_inspect_forxm4.smd"
 	{ event 9011 4 "0" }
-	{ event 9011 132 "1" }
+	{ event 5004 127 "fly_ar_standard_empty_bolt_back" }
+	{ event 5004 54 "Viewmodel.Large" }
+	{ event 5004 150 "fly_ar_standard_empty_bolt_release" }
+	{ event 9011 168 "1" }
 	{ event 5004 80 "Viewmodel.Small" }
 	fadein 0.2
 	fadeout 0.2

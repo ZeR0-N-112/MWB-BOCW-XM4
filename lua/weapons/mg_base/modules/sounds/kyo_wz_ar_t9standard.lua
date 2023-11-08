@@ -23,13 +23,33 @@ sound.Add({
     name =           "fly_ar_standard_inspect_pt1",
     channel =        CHAN_WPNFOLEY +1,
     volume =         1,
-    sound = {"zeron/wz/bocw/t9standard/fly_ar_standard_inspect_pt1.wav"}              
+    sound = {"zeron/wz/bocw/t9standard/01-fly_ar_standard_inspect_pt1.wav"}              
 })
 sound.Add({
     name =           "fly_ar_standard_inspect_pt2",
     channel =        CHAN_WPNFOLEY +2,
     volume =         1,
-    sound = {"zeron/wz/bocw/t9standard/fly_ar_standard_inspect_pt2.wav"}              
+    sound = {"zeron/wz/bocw/t9standard/03-fly_ar_standard_inspect_pt2.wav"}              
+})
+sound.Add({
+    name =           "fly_ar_standard_inspect_pt3",
+    channel =        CHAN_WPNFOLEY +3,
+    volume =         1,
+    sound = {"zeron/wz/bocw/t9standard/04-fly_ar_standard_inspect_pt1.wav"}              
+})
+
+sound.Add({
+    name =           "fly_ar_standard_inspect_pt5",
+    channel =        CHAN_WPNFOLEY +4,
+    volume =         1,
+    sound = {"zeron/wz/bocw/t9standard/02-fly_ar_standard_inspect_pt2.wav"}              
+})
+
+sound.Add({
+    name =           "fly_ar_standard_inspect_pt4",
+    channel =        CHAN_WPNFOLEY +5,
+    volume =         1,
+    sound = {"zeron/wz/bocw/t9standard/05-fly_ar_standard_inspect_pt2.wav"}              
 })
 
 
